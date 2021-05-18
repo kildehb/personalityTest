@@ -1,0 +1,100 @@
+Problem Statement:
+You need to create a program that askes a user 5 questions with the answer option of “yes”, “no”, or “maybe”. The selected answer must have a numeric assignment that is totaled as the questions are being answered. Upon completion, the program will display a final message stating an ending score and a personality description based upon the total number of points.
+
+Nouns: 5 questions, answer options, numeric assignment, final message, ending score, total number of points
+
+Verbs: create, askes, displayed, totaled, answered, display final message
+
+Defining Diagram:
+  INPUT
+    Answers
+
+  PROCESS
+    Initialize variables
+    Prompt for questions
+    Convert strings to number values
+    Total answers
+    Display message with score
+
+  OUTPUT
+    Message with score
+
+Pseudocode:
+answerToNum
+  switch x to number value
+END
+personalityTest
+  Initialize answer to an array
+  Initialize totalAnswer to zero
+  Prompt user with 5 questions
+  Total the answer values
+  Display score and corresponding message
+END
+Run personalityTest
+
+Test Plan:
+VARIABLES: answer
+
+Test Case 1:
+  INPUT VALUES: yes, yes, yes, maybe, yes
+		
+  EXPECTED RESULTS:
+    Your result is: 
+    You scored 18/20!
+    You are a very adventurous and positive person!
+    Consider pacing yourself so that you don't overdo it. 
+    Thank you for your participation! 
+  ACTUAL RESULTS:
+    Your result is: 
+    You scored 18/20!
+    You are a very adventurous and positive person!
+    Consider pacing yourself so that you don't overdo it. 
+    Thank you for your participation! 
+
+Test Case 2:
+  INPUT VALUES: yes, yes, no, no, maybe
+
+  EXPECTED RESULTS:
+    Your result is: 
+    You scored 10/20!
+    You are a very situational person.
+    Consider being bolder in your choices. 
+    Thank you for your participation! 
+  ACTUAL RESULTS:
+    Your result is: 
+    You scored 10/20!
+    You are a very situational person.
+    Consider being bolder in your choices. 
+    Thank you for your participation! 
+
+Test Case 3:
+  INPUT VALUES: no, no, maybe, maybe, yes
+
+  EXPECTED RESULTS:
+    Your result is: 
+    You scored 8/20!
+    You are a very situational person.
+    Consider being bolder in your choices. 
+    Thank you for your participation! 
+  ACTUAL RESULTS:
+    Your result is: 
+    You scored 8/20!
+    You are a very situational person.
+    Consider being bolder in your choices. 
+    Thank you for your participation! 
+
+Test Case 4:
+  INPUT VALUES: maybe, no, maybe, no, no
+
+  EXPECTED RESULTS:
+    Your result is: 
+    You scored 4/20!
+    You are a very cautious person.
+    Consider taking more chances. 
+    Thank you for your participation! 
+  ACTUAL RESULTS:
+    Your result is: 
+    You scored 4/20!
+    You are a very cautious person.
+    Consider taking more chances. 
+    Thank you for your participation! 
